@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra en Kuro-Sama</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cabecera">
+            <h1 class="cabecera__titulo">Bienvenidos a Supermercados Kuro-Sama</h1>
+            <img src="img/logo.jpg" alt="Kuro-Sama logo" class="cabecera__logo">
+        </div>
+        <div class="formulario">
+            <form action="Comprar" method="post" class="form-horizontal">
+            
+                <h2>Comprar</h2>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Producto:</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="nombre" class="form-control" style="width:50%" placeholder="Nombre Producto" required="required" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Unidades:</label>
+                    <div class="col-sm-10">
+                        <input type="number" name="cantidad" class="form-control"  min="0" value= "0" style="width:50%" placeholder="Unidades"/>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Precio:</label>
+                    <div class="col-sm-10">
+                        <input type="number" name="valor" class="form-control" min="0" value="0" style="width:50%" placeholder="Precio"/>
+                    </div>
+                </div>
+            
+                <button type="submit" class="btn btn-primary" style="width:30%">Comprar</button>
+                <a href='opciones.html' class='btn btn-info' style='width:20%'> Volver </a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
